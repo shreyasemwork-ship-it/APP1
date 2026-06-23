@@ -148,13 +148,13 @@ if uploaded_file:
 
             if is_forecast_ready:
                 st.markdown(
-                    '<span class="badge-green">✅ Suitable for Forecasting</span>',
+                    '<span class="badge-green"> Suitable for Forecasting</span>',
                     unsafe_allow_html=True
                 )
                 st.caption("Mean ≈ Median → roughly symmetric distribution.")
             else:
                 st.markdown(
-                    '<span class="badge-yellow">⚠️ Review Before Forecasting</span>',
+                    '<span class="badge-yellow"> Review Before Forecasting</span>',
                     unsafe_allow_html=True
                 )
                 st.caption("Mean and Median differ significantly → skewed distribution.")
@@ -162,4 +162,4 @@ if uploaded_file:
         st.markdown('<hr class="divider">', unsafe_allow_html=True)
 
 else:
-    st.info("⬆️  Upload an Excel file above to get started.")
+    st.info("Upload an Excel file above to get started.")
